@@ -1,0 +1,39 @@
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    text-align: left;    
+    margin: 0 auto;
+    padding: 7rem;
+    width: 100%;
+    background: #23424A;
+    color: white;
+}
+
+.intro-content{
+    width: 50%;
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-weight: bolder;
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+#btn{
+    width: auto;
+    background-color: rgb(49, 165, 155);
+    border-radius: 8rem;
+    color: black;
+    padding: .7rem 1.5rem;
+    font-size: smaller;
+}
+a:link{
+    text-decoration: none;
+}
