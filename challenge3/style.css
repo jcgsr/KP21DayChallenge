@@ -1,8 +1,12 @@
-* { box-sizing: border-box; }
+*, *::after, *::before { box-sizing: border-box; }
 
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
 }
 
 .container{
@@ -10,25 +14,81 @@ body{
     margin: 0 auto;
     padding: 7rem;
     width: 100%;
-    background: #23424A;
     color: white;
 }
 
+.ct-a{
+    background: #23424A; 
+    display: flex;
+    
+}
+
+.hero{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hero_img{
+    align-items: flex-start;
+    width: 25%;
+}
+
+.ct-b{
+    color: black;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 0 3em;
+}
+
+.ct-b h2{
+    font-size: 36px;
+    color: #87629A;
+}
+
+.ct-c{
+    color: aliceblue;
+    background-color: #136C72;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 3em 0;
+}
+
+.ct-c h2{
+    font-size: 36px;
+}
+
+.row{
+    display: flex; /* default => row */
+    /*gap: 100px; => space between columns can't use yet, only in firefox  */
+}
+
+.col + .col{ /* selects the adjacent column*/
+    margin-left: 2rem;
+}
+
+.col{
+    margin: 1rem;
+    width: 100%;
+}
+
 .intro-content{
-    width: 50%;
+    width: 65%;
     padding-bottom: 2rem;
     line-height: 1.5rem;
+    font-size: 21px;
 }
 
 h1 {
     font-weight: bolder;
     width: 50%;
-    font-size: 2.5rem;
+    font-size: 48px;
+    margin-top: 0;
 }
 
 #btn{
     width: auto;
-    background-color: rgb(49, 165, 155);
+    background-color: #38CFD9;
     border-radius: 8rem;
     color: black;
     padding: .7rem 1.5rem;
@@ -36,4 +96,9 @@ h1 {
 }
 a:link{
     text-decoration: none;
+}
+
+#btn:hover,
+#btn:focus{
+    opacity: .75;
 }
